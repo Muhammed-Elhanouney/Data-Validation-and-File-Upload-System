@@ -42,7 +42,7 @@ class Validate
         if (empty($email)) {
             $this->errors['email'] = 'email can`t be empty';
         } elseif (!filter_var($email , FILTER_VALIDATE_EMAIL)) {
-            $this->errors['email'] = 'wrong email typo';
+            $this->errors['email'] = 'wrong email type';
         }
     }
 
